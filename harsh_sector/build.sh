@@ -9,7 +9,16 @@ JAVA_HOME="/opt/homebrew/opt/openjdk@17"
 STARSECTOR_JAVA="/Applications/Starsector.app/Contents/Resources/Java"
 STARSECTOR_API="$STARSECTOR_JAVA/starfarer.api.jar"
 LOG4J="$STARSECTOR_JAVA/log4j-1.2.9.jar"
-CLASSPATH="$STARSECTOR_API:$LOG4J"
+
+# LunaLib (soft dependency - required for compilation, optional at runtime)
+LUNALIB_JAR="/Applications/Starsector.app/mods/LunaLib/jars/LunaLib.jar"
+if [ ! -f "$LUNALIB_JAR" ]; then
+    echo "ERROR: LunaLib not found at $LUNALIB_JAR"
+    echo "Install LunaLib to compile. Download from: https://github.com/Lukas22041/LunaLib/releases"
+    exit 1
+fi
+
+CLASSPATH="$STARSECTOR_API:$LOG4J:$LUNALIB_JAR"
 SRC_DIR="src"
 BUILD_DIR="build"
 JAR_DIR="jars"

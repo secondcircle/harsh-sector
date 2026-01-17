@@ -28,6 +28,10 @@ public class RegulatedBlackMarket extends BlackMarketPlugin {
      */
     @Override
     public boolean isEnabled(CoreUIAPI ui) {
+        // If the feature is disabled via settings, always allow access
+        if (!HarshSectorSettings.isTransponderCheckEnabled()) {
+            return true;
+        }
         // If transponder is ON, black market is disabled
         // If transponder is OFF, black market is enabled
         return !isTransponderOn();
@@ -49,6 +53,11 @@ public class RegulatedBlackMarket extends BlackMarketPlugin {
     public void createTooltip(CoreUIAPI ui, TooltipMakerAPI tooltip, boolean expanded) {
         // First, let the vanilla tooltip do its thing
         super.createTooltip(ui, tooltip, expanded);
+
+        // Skip custom tooltip if feature is disabled
+        if (!HarshSectorSettings.isTransponderCheckEnabled()) {
+            return;
+        }
 
         // Add our warning message
         float pad = 10f;

@@ -1,0 +1,3 @@
+fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
+harshsector_header,Harsh Sector,Header,,,Configure difficulty and realism features.,,,
+harshsector_transponder_check,Transponder Black Market Check,Boolean,true,,"When [enabled], you must turn your transponder OFF to access black markets. Broadcasting your identity while conducting illegal business is... unwise.",,,
