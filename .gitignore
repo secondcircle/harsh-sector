@@ -1,0 +1,14 @@
+# Decompiled API source (for reference only, don't commit)
+docs/api-src/
+
+# Build artifacts
+harsh_sector/build/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
