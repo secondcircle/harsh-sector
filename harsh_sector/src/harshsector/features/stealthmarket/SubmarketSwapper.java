@@ -1,4 +1,4 @@
-package harshsector;
+package harshsector.features.stealthmarket;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.PlayerMarketTransaction;
@@ -25,7 +25,7 @@ public class SubmarketSwapper implements ColonyInteractionListener {
 
     /**
      * Register this listener with the game.
-     * Called from HarshSectorModPlugin.onGameLoad()
+     * Called from StealthMarketFeature.register()
      */
     public static void register() {
         // Check if we're already registered (prevents duplicates on save/load)

@@ -1,5 +1,5 @@
 {
   "plugins": {
-    "tacticalRetreatPlugin": "harshsector.combat.TacticalRetreatPlugin"
+    "tacticalRetreatPlugin": "harshsector.features.retreat.TacticalRetreatPlugin"
   }
 }

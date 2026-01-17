@@ -1,7 +1,12 @@
 fieldID,fieldName,fieldType,defaultValue,secondaryValue,fieldDescription,minValue,maxValue,tab
 harshsector_header,Harsh Sector,Header,,,Configure difficulty and realism features.,,,
-harshsector_transponder_check,Transponder Black Market Check,Boolean,true,,"When [enabled], you must turn your transponder OFF to access black markets. Broadcasting your identity while conducting illegal business is... unwise.",,,
-harshsector_retreat_header,Tactical Retreat,Header,,,Burn-speed based pursuit mechanics for retreat battles.,,,
-harshsector_retreat_enabled,Enable Tactical Retreat,Boolean,true,,"When [enabled], enemy ships in retreat battles are delayed based on their burn speed relative to your fleet's slowest ship.",,,
-harshsector_retreat_delay,Delay Per Burn Level (seconds),Double,30.0,,"Seconds of delay per burn level difference. A capital ship (burn 7) chasing frigates (burn 10) would be delayed 90 seconds.",5.0,120.0,
-harshsector_retreat_max_delay,Maximum Delay (seconds),Double,180.0,,"Maximum delay for any enemy ship regardless of burn difference.",30.0,600.0,
+harshsector_transponder_check,Transponder Black Market Check,Boolean,true,,"When [enabled], you must turn your transponder OFF to access black markets. Broadcasting your identity while conducting illegal business is... unwise.",,,Stealth Market
+harshsector_retreat_header,Tactical Retreat,Header,,,Burn-speed based pursuit mechanics for retreat battles.,,,Retreat
+harshsector_retreat_enabled,Enable Tactical Retreat,Boolean,true,,"When [enabled], enemy ships in retreat battles are delayed based on their burn speed relative to your fleet's slowest ship.",,,Retreat
+harshsector_retreat_delay,Delay Per Burn Level (seconds),Double,30.0,,"Seconds of delay per burn level difference. A capital ship (burn 7) chasing frigates (burn 10) would be delayed 90 seconds.",5.0,120.0,Retreat
+harshsector_retreat_max_delay,Maximum Delay (seconds),Double,180.0,,"Maximum delay for any enemy ship regardless of burn difference.",30.0,600.0,Retreat
+harshsector_eburn_header,Emergency Burn Effects,Header,,,How emergency burn affects pursuit battles.,,,Retreat
+harshsector_eburn_enabled,Enable Emergency Burn Modifier,Boolean,true,,"When [enabled], being caught while emergency burning increases enemy deployment delay. If the enemy was also emergency burning, the effects cancel out.",,,Retreat
+harshsector_eburn_modifier,Burn Level Modifier,Int,1,,"Burn levels added/subtracted based on emergency burn status. Player eburn = +modifier (more delay). Enemy eburn = -modifier (less delay).",1,3,Retreat
+harshsector_story_header,Story Point Changes,Header,,,Modifications to story point mechanics.,,,Retreat
+harshsector_story_escape_disabled,Disable Story Point Escape,Boolean,true,,"When [enabled], removes the option to spend a story point to cleanly disengage from combat. You must fight or flee the hard way.",,,Retreat

@@ -1,4 +1,4 @@
-package harshsector;
+package harshsector.features.stealthmarket;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.CoreUIAPI;
@@ -29,7 +29,7 @@ public class RegulatedBlackMarket extends BlackMarketPlugin {
     @Override
     public boolean isEnabled(CoreUIAPI ui) {
         // If the feature is disabled via settings, always allow access
-        if (!HarshSectorSettings.isTransponderCheckEnabled()) {
+        if (!StealthMarketFeature.isTransponderCheckEnabled()) {
             return true;
         }
         // If transponder is ON, black market is disabled
@@ -55,7 +55,7 @@ public class RegulatedBlackMarket extends BlackMarketPlugin {
         super.createTooltip(ui, tooltip, expanded);
 
         // Skip custom tooltip if feature is disabled
-        if (!HarshSectorSettings.isTransponderCheckEnabled()) {
+        if (!StealthMarketFeature.isTransponderCheckEnabled()) {
             return;
         }
 

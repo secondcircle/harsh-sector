@@ -2,6 +2,8 @@ package harshsector;
 
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
+import harshsector.features.retreat.RetreatFeature;
+import harshsector.features.stealthmarket.StealthMarketFeature;
 import org.apache.log4j.Logger;
 
 /**
@@ -12,20 +14,21 @@ import org.apache.log4j.Logger;
  * - onGameLoad() - when a save is loaded or new game starts
  * - onNewGame() - only when starting a new game
  *
- * We use onGameLoad() to register our listener that swaps black markets.
+ * Each feature is self-contained in its own package under features/.
+ * This plugin discovers and registers them on game load.
  */
 public class HarshSectorModPlugin extends BaseModPlugin {
 
-    // Logger for debugging - output goes to starsector.log
     private static final Logger log = Global.getLogger(HarshSectorModPlugin.class);
 
     @Override
     public void onGameLoad(boolean newGame) {
-        // This runs every time a save is loaded (or new game starts)
-        log.info("Harsh Sector: Registering submarket swapper");
+        log.info("Harsh Sector: Initializing features");
 
-        // Register our listener - it will swap black markets when player opens markets
-        // The 'true' means this listener persists across saves
-        SubmarketSwapper.register();
+        // Register features - each handles its own setup
+        StealthMarketFeature.register();
+        RetreatFeature.register();
+
+        log.info("Harsh Sector: All features registered");
     }
 }

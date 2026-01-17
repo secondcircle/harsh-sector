@@ -1,4 +1,4 @@
-package harshsector.combat;
+package harshsector.features.retreat;
 
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.CampaignFleetAPI;
