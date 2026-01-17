@@ -4,12 +4,13 @@
 - (none)
 
 ## Up Next
-- Set up basic mod structure (mod_info.json, etc.)
-- Learn Starsector modding fundamentals
+- Add next Starpocalypse feature to Harsh Sector (see `docs/modding/STARPOCALYPSE-REFERENCE.md` for options)
+  - Military market regulations?
+  - D-mods on all ships?
+  - Enhanced market defenses?
 
 ## Blocked / Waiting
 - (none)
 
 ## Open Questions
-- What type of mod to build (faction, ships, utility)?
-- Java vs JSON-only approach?
+- (none)
