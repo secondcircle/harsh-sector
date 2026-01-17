@@ -31,13 +31,12 @@ mkdir -p "$BUILD_DIR"
 mkdir -p "$JAR_DIR"
 
 echo "=== Compiling Java files ==="
-# Compile with Java 7 compatibility (Starsector requirement)
-# Note: --release 7 ensures compatibility with Starsector's Java version
+# Compile for Java 17 (Starsector 0.98a uses Java 17)
 # Find all Java files (supports subpackages)
 find "$SRC_DIR" -name "*.java" | xargs "$JAVA_HOME/bin/javac" \
     -cp "$CLASSPATH" \
     -d "$BUILD_DIR" \
-    --release 7
+    --release 17
 
 echo "=== Creating JAR ==="
 # Create JAR file from compiled classes

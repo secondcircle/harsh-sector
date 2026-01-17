@@ -3,7 +3,7 @@
 A Starsector mod adding difficulty/realism features inspired by Starpocalypse.
 
 ## Tech Stack
-- Java 17 (compiles with `--release 7` for Starsector compatibility)
+- Java 17 (compiles with `--release 17` for Starsector 0.98a)
 - Starsector 0.98a-RC8
 
 ## Key Paths

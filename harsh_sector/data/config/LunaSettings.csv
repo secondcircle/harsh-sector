@@ -3,5 +3,5 @@ harshsector_header,Harsh Sector,Header,,,Configure difficulty and realism featur
 harshsector_transponder_check,Transponder Black Market Check,Boolean,true,,"When [enabled], you must turn your transponder OFF to access black markets. Broadcasting your identity while conducting illegal business is... unwise.",,,
 harshsector_retreat_header,Tactical Retreat,Header,,,Burn-speed based pursuit mechanics for retreat battles.,,,
 harshsector_retreat_enabled,Enable Tactical Retreat,Boolean,true,,"When [enabled], enemy ships in retreat battles are delayed based on their burn speed relative to your fleet's slowest ship.",,,
-harshsector_retreat_delay,Delay Per Burn Level (seconds),Float,30.0,,"Seconds of delay per burn level difference. A capital ship (burn 7) chasing frigates (burn 10) would be delayed 90 seconds.",5.0,120.0,
-harshsector_retreat_max_delay,Maximum Delay (seconds),Float,180.0,,"Maximum delay for any enemy ship regardless of burn difference.",30.0,600.0,
+harshsector_retreat_delay,Delay Per Burn Level (seconds),Double,30.0,,"Seconds of delay per burn level difference. A capital ship (burn 7) chasing frigates (burn 10) would be delayed 90 seconds.",5.0,120.0,
+harshsector_retreat_max_delay,Maximum Delay (seconds),Double,180.0,,"Maximum delay for any enemy ship regardless of burn difference.",30.0,600.0,
