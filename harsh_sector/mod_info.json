@@ -1,0 +1,10 @@
+{
+  "id": "harsh_sector",
+  "name": "Harsh Sector",
+  "author": "_Ike_",
+  "version": "0.1.0",
+  "description": "Makes the sector harsher. Requires transponder OFF to access black markets.",
+  "gameVersion": "0.98a-RC8",
+  "jars": ["jars/HarshSector.jar"],
+  "modPlugin": "harshsector.HarshSectorModPlugin"
+}
